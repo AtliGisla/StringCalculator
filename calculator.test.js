@@ -32,3 +32,9 @@ it("should return sum using \\n and , as delimenter", () => {
     expect(add("100,100\n100\n100\n100,100,100,50,3")).toBe(753);
     expect(add("5\n6\n9\n2,5,8")).toBe(35);
 });
+
+//Test 6
+it("should throw exception if there are negative numbers", () => {
+    expect( () => {add("1,-2")}).toThrow("Negatives not allowed: -2");
+    expect( () => {add("-3,-2,5\n-7")}).toThrow("Negatives not allowed: -3,-2,-7");
+});
