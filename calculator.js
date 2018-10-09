@@ -3,7 +3,7 @@ function add(numbers) {
         return 0;
     }
     else{
-        return null;
+        return parseInt(numbers);
     }
 };
 
