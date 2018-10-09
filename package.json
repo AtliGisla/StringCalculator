@@ -1,0 +1,22 @@
+{
+  "name": "StringCalculator",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtliGisla/tdd_excercise1.git"
+  },
+  "author": "Atli Gislason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtliGisla/tdd_excercise1/issues"
+  },
+  "homepage": "https://github.com/AtliGisla/tdd_excercise1#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
