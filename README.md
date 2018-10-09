@@ -1,2 +1,1 @@
 # StringCalculator
-# StringCalculator
