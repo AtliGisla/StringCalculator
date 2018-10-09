@@ -13,8 +13,15 @@ it("should return number that is inputted", () => {
 });
 
 //Test 3
-it("should return the sum of the numbers between the commas", () => {
+it("should return the sum of the 2 numbers between the commas", () => {
     expect(add("2,2")).toBe(4);
     expect(add("55,72")).toBe(127);
     expect(add("444,555")).toBe(999);
+});
+
+//Test 4
+it("should return the sum of all the numbers between the commas", () => {
+    expect(add("1,1,1,1,1")).toBe(5);
+    expect(add("5,6,9,2,5,8")).toBe(35);
+    expect(add("100,100,100,100,100,100,100,50,3")).toBe(753);
 });
