@@ -44,3 +44,14 @@ it("should return the sum of the numbers and ignore the numbers above 1000", () 
     expect(add("2,2,1000")).toBe(4);
     expect(add("5,3,999,1000,2000\n5")).toBe(1012);
 });
+
+//Test 8
+it("should return the sum of the numbers using a speical delimiter", () => {
+    expect(add("//;\n5;5")).toBe(10);
+    expect(add("//hello\n5hello2,6\n7hello1")).toBe(21);
+});
+
+//Test 9
+it("should throw exception due to negative number in special delimiter case", () => {
+    expect( () => {add("//;\n1;-2")}).toThrow("Negatives not allowed: -2");
+});
