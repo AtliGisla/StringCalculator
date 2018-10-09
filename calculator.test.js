@@ -25,3 +25,10 @@ it("should return the sum of all the numbers between the commas", () => {
     expect(add("5,6,9,2,5,8")).toBe(35);
     expect(add("100,100,100,100,100,100,100,50,3")).toBe(753);
 });
+
+//Test 5
+it("should return sum using \\n and , as delimenter", () => {
+    expect(add("1\n1\n1")).toBe(3);
+    expect(add("100,100\n100\n100\n100,100,100,50,3")).toBe(753);
+    expect(add("5\n6\n9\n2,5,8")).toBe(35);
+});
