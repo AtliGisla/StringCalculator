@@ -20,9 +20,15 @@ function add(numbers) {
         var list_of_numbers = numbers.split("\n").join(",").split(",");
         //console.log(list_of_numbers);
         var sum = 0;
-        list_of_numbers.forEach(number => {
-            sum += parseInt(number);
+        //console.log("START");
+        list_of_numbers.forEach(number_str => {
+            var number_int = parseInt(number_str);
+            if(number_int < 1000){
+                //console.log(number_int);
+                sum += number_int;
+            }
         });
+        //console.log("sum: " + sum);
         return sum;
     }
     else{
